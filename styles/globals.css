@@ -1,0 +1,27 @@
+/* global.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --primary-color: #2B18E9;
+  --secondary-color: #7639A7;
+  --accent-color: #F3684A;
+  --background-color: #FAFAFA;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #2B18E9;
+    --secondary-color: #7639A7;
+    --accent-color: #F3684A;
+    --background-color: #2B18E9; /* Change the dark background color as needed */
+  }
+}
+
+body {
+  color: var(--primary-color);
+  background-color: var(--background-color);
+}
+
+/* Add additional global styles if needed */

@@ -1,0 +1,13 @@
+// @models/Income.js
+import mongoose from 'mongoose';
+
+const IncomeSchema = new mongoose.Schema({
+  userID: { type: mongoose.Schema.Types.ObjectId, required: true },
+  source: { type: String, required: true },
+  amount: { type: Number, required: true },
+  date: { type: Date, required: true },
+  paymentMethod: { type: String, required: true },
+  description: { type: String },
+});
+
+export default mongoose.models.Income || mongoose.model('Income', IncomeSchema);
